@@ -23,8 +23,11 @@
         <h1 class="mx-auto mt-5">The Future of Jobs Report 2025>
         </h1>
         <section class="bg-light p-4 mt-3">
-            <h4 class="text-underline">Preface</h4>
+            <img src="author.jpeg" class="rounded-circle" alt="Author" width="100" height="100">
             <strong>Saadia Zahidi</strong> - <i>Managing Director, World Economic Forum</i>
+        </section>
+        <section class="bg-light p-4 mt-5">
+            <h3 class="text-underline">Preface</h3>
             <h5 class="mt-4">Central to the report is a unique dataset derived from an extensive survey of global
                 employers:</h5>
             <ul>
@@ -35,28 +38,66 @@
                     million workers across 22 industry clusters and 55 economies</li>
                 <li>Providing insights into the emerging jobs landscape for the 2025-2030 period</li>
             </ul>
-            Source: <a class="fs-6">https://www.weforum.org/publications/the-future-of-jobs-report-2025/in-full/>
-            </section>
+            Source: <a class="fs-6">https://www.weforum.org/publications/the-future-of-jobs-report-2025/in-full/></a>
+        </section>
 
-                <section class="mt-3">
-                    <div class="row">
-                        <div class="col-6">
-                            <div>
-                                <canvas id="myChart1" height="400"></canvas>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div >
-                                <canvas id="myChart2" height="400"></canvas>
-                            </div>
-                        </div>
+        <section class="mt-5">
+            <h4>Top jobs by fastest net growth and net decline, projected by surveyed employers</h4>
+            <div class="row mt-3">
+                <div class="col-6">
+                    <div>
+                        <canvas id="myChart1" height="400"></canvas>
                     </div>
-                   
-                </section>
+                </div>
+                <div class="col-6">
+                    <div>
+                        <canvas id="myChart2" height="400"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <article class="mt-3 px-3 py-2 text-success-emphasis bg-success-subtle border border-success-subtle rounded">
+                <h5>
+                    Technological change
+                </h5>
+                <ul class="my-0">
+                    <li>
+                        Trends
+                        in AI and information processing technology
+                        are expected to create 11 million jobs
+                    </li>
+                    <li>The Shifting human-machine frontier:
+                        automation versus augmentation</li>
+                </ul>
+            </article>
+
+        </section>
+
+        <section class="mt-5">
+            <h4>Core skills in 2025</h4>
+            <i>Share of employers who consider the stated skills to be core skills for their workforce.</i>
+            <div class="mt-3">
+                <canvas id="myChart3" height="400"></canvas>
+            </div>
+
+            <article class="mt-3 p-3 text-success-emphasis bg-success-subtle border border-success-subtle rounded mb-5">
+           
+               <p class="mb-0">
+                        Overall, leadership and social influence, resilience,
+                        flexibility and agility, and AI and big data have seen
+                        the most substantial increase in importance, with
+                        22, 17, and 17 percentage-point rises, respectively,
+                    </p>
+                
+               
+            </article>
+        </section>
 
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
     <script src="script.js"></script>
 </body>
 
